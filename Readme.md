@@ -84,6 +84,11 @@ it also include an `init` function that gets called after the video/audio elemen
 
 **note**: please note, **the success and error handlers are not optional**. especially mind the error handler, `getUserMedia` will throw errors, you need to have proper error handling in place, that's why i made the error handler mandatory. if you refuse to call any of the three methods without proper error handling, the method will just `return false`
 
+##LICENSE
+
+MIT, nuff said
+
+
 ## people stuff
 thx to <a href="https://github.com/addyosmani/getUserMedia.js">addy osmani</a> for his <a href="https://github.com/addyosmani/getUserMedia.js">getUserMedia shim</a>, i did reuse his code heavily (but not the flash part, once you go down the flash road there is no hope, and what are we without hope?)
 me, <a href="http://www.franz-enzenhofer.com/">Franz Enzenhofer</a>, follow me not on <a href="https://twitter.com/enzenhofer">twitter</a>.
