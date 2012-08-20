@@ -91,6 +91,8 @@ MIT, nuff said
 
 ## people stuff
 thx to <a href="https://github.com/addyosmani/getUserMedia.js">addy osmani</a> for his <a href="https://github.com/addyosmani/getUserMedia.js">getUserMedia shim</a>, i did reuse his code heavily (but not the flash part, once you go down the flash road there is no hope, and what are we without hope?)
+
+
 me, <a href="http://www.franz-enzenhofer.com/">Franz Enzenhofer</a>, follow me not on <a href="https://twitter.com/enzenhofer">twitter</a>.
 
 oh, by the way, i'm at <a href="http://2012.lxjs.org/">LXJS 2012</a> and <a href="http://fronteers.nl/congres/2012">fronteers 2012</a>, talk to me!
