@@ -1,6 +1,7 @@
 Sinne = {}
 window.Sinne = Sinne
 
+#TODO rename options to config
 Sinne.getUserMedia = (options, success, error) ->
   navigator.getUserMedia_ = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
   if !!navigator.getUserMedia_
@@ -79,7 +80,7 @@ getUserX = (video_support=false, audio_support=false, success, error, options={}
   #console.log(element)
   
   #init
-  options_.init(element)
+  options_.init?(element)
 
   #enable the audio support in the video via the options
   #if options_.audio is true then audio_support = true #moved into getUserVideo
@@ -93,7 +94,9 @@ Sinne.getUserVideo = (success, error, options) ->
   
 Sinne.getUserAudio = (success, error, options) ->
   video_support = false
-  if options?.video is true then video_support = true
+  #enabling video for getUserAudio is not supported, as it would return a <video>
+  #but getUserAudio always returns an <audio>
+  #if options?.video is true then video_support = true
   getUserX(video_support, true, success, error, options)  
   
 #Sinne.getUserVideo = (success, error, options) ->
@@ -127,6 +130,6 @@ Sinne.getUserAudio = (success, error, options) ->
 #      vendorURL = window.URL ? window.webkitURL
 #      audio_element.src = if vendorURL then vendorURL.createObjectURL(stream) else stream
 #    success(audio_element, stream)
-#  Sinne.getUserMedia({audio:true}, success_, error)
+#  Sinne.getUserMedia({audio:true}, success_, error) 
   
   
